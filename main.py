@@ -4,7 +4,8 @@ from tic_tac_toe2 import tic_tac_toe2
 
 choices = ['Tic tac toe', 'Rock paper scissors', 'Tic tac toe 2']
 
-if __name__ == '__main__':
+
+def main():
     player_choice = ''
     while player_choice != 'n':
         for i in range(len(choices)):
@@ -16,3 +17,6 @@ if __name__ == '__main__':
             rps_game()
         elif player_choice == '2':
             tic_tac_toe2()
+
+if __name__ == '__main__':
+    main()
